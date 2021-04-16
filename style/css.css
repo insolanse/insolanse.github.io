@@ -1,0 +1,146 @@
+/*padding: padding-top padding-right padding-bottom padding-left;
+margin: margin-top margin-right margin-bottom margin-left;
+padding: Y X;
+margin: Y X;
+padding: PT=10px PX=30px PB50px;
+*/
+* {
+    margin: 0;}
+
+html,
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: rgb(252, 247, 247);
+}
+
+.hero {
+}
+body {
+    background: rgb(243, 237, 219) url('/assets/img/photo-1485217988980-11786ced9454.jpeg') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.d-block {
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 1px;
+    padding: 10px;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+header.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    z-index: 9;
+}
+
+
+
+/* Обертка */
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.products__card {
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+
+   display: inline-block;
+   max-width: 250px;
+   text-align: center;
+   font-family: arial;
+    
+
+}
+
+.products__card img {
+    width: 100%;
+}
+
+.products__card a.products__card-link {
+    padding: 4px;
+    border-radius: 2px;
+    background-color: rgb(20, 69, 160);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.products__card__price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.products__card__price span {
+    font-weight: 600;
+    font-size: 24px;
+    color:rgb(250, 74, 103);
+}
+
+.products__card__price s {
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+
+.products__card__buttons {
+    margin-top: 10px;
+}
+
+.label {
+    padding: 4px 15px;
+    background-color: rgb(145, 248, 120);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.sale {
+    padding: 4px 15px;
+    background-color: rgb(250, 74, 103);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.products__card__image {
+    position: relative;
+    width: 100%;
+}
+
+.products__card__image .sale{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.products__card__image .label{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
